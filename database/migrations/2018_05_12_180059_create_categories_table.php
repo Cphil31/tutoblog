@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Category;
 
 class CreateCategoriesTable extends Migration
 {
@@ -20,7 +21,7 @@ class CreateCategoriesTable extends Migration
         });
 
         Category::create([
-            'name'=>'Sport'
+            'name'=>'Sport',
         ]);
     }
 
@@ -31,6 +32,6 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('users');
     }
 }

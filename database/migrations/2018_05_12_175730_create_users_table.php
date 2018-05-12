@@ -24,11 +24,11 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        User::create([
-            'username'=>'Philippe',
-            'password'=>Hash::make('admin'), 
-            'is_admin'=>true,
-        ]);
+        // User::create([
+        //     'name'=>'Philippe',
+        //     'password'=>Hash::make('admin'), 
+        //     'is_admin'=>true,
+        // ]);
     }
 
     /**

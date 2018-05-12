@@ -16,9 +16,9 @@ class User extends Authenticatable
      */
     // les champs que l'on ne peut pas modifer
     protected $guarded = ['id','created_at'];
-    // protected $fillable = [
-    //     'name', 'email', 'password',
-    // ];
+    protected $fillable = [
+        'name', 'email', 'password',
+    ];
 
     /**
      * The attributes that should be hidden for arrays.

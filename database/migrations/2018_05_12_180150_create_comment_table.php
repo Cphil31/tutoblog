@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Comment;
 
 class CreateCommentTable extends Migration
 {
@@ -20,22 +21,21 @@ class CreateCommentTable extends Migration
             $table->integer('post_id');
             $table->timestamps();
 
-            Comment::create([
-                    'content'=>'Un commentaire',
-                    'user_id'=>1,
-                    'post_id'=>null,
-            ]);
-            Comment::create([
-                    'content'=>'Un commentaire',
-                    'user_id'=>1,
-                    'post_id'=>null,
-            ]);
-            Comment::create([
-                    'content'=>'Un commentaire',
-                    'user_id'=>1,
-                    'post_id'=>null,
-            ]);
-
+            // Comment::create([
+            //         'content'=>'Un commentaire',
+            //         'user_id'=>1,
+            //         'post_id'=>null,
+            // ]);
+            // Comment::create([
+            //         'content'=>'Un commentaire',
+            //         'user_id'=>1,
+            //         'post_id'=>null,
+            // ]);
+            // Comment::create([
+            //         'content'=>'Un commentaire',
+            //         'user_id'=>1,
+            //         'post_id'=>null,
+            // ]);
         });
     }
 
@@ -46,6 +46,6 @@ class CreateCommentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comment');
+        Schema::dropIfExists('users');
     }
 }
