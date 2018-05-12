@@ -25,7 +25,7 @@ class CreatePostTable extends Migration
         });
         for ($i=0; $i < 10 ; $i++) { 
             Post::create([
-                
+                'name'=>'Post'.$i,
             ]),
         }
     }
