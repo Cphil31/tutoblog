@@ -27,6 +27,7 @@ class CreatePostTable extends Migration
             Post::create([
                 'name'=>'Post'.$i,
                 'slug'=>'post-'.$i,
+                'content'=>'lorem Ipsum',
 
             ]),
         }
