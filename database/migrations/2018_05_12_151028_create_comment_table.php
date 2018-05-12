@@ -25,6 +25,16 @@ class CreateCommentTable extends Migration
                     'user_id'=>1,
                     'post_id'=>null,
             ]);
+            Comment::create([
+                    'content'=>'Un commentaire',
+                    'user_id'=>1,
+                    'post_id'=>null,
+            ]);
+            Comment::create([
+                    'content'=>'Un commentaire',
+                    'user_id'=>1,
+                    'post_id'=>null,
+            ]);
 
         });
     }
