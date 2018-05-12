@@ -19,6 +19,13 @@ class CreateCommentTable extends Migration
             $table->integer('users_id');
             $table->integer('post_id');
             $table->timestamps();
+
+            Comment::create([
+                    'content'=>'Un commentaire',
+                    'user_id'=>1,
+                    'post_id'=>null,
+            ]);
+
         });
     }
 

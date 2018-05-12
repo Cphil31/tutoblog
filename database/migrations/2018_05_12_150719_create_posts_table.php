@@ -18,7 +18,7 @@ class CreatePostTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->text('content');
-            $table->integer('counts_comment');
+            $table->integer('counts_comment')->default(0);
             $table->integer('category_id');
             $table->integer('user_id';
             $table->timestamps();
@@ -28,7 +28,7 @@ class CreatePostTable extends Migration
                 'name'=>'Post'.$i,
                 'slug'=>'post-'.$i,
                 'content'=>'lorem Ipsum', 
-                'counts_comment'=>3,
+                'counts_comment'=>0,
                 'category_id'=>1,
 
             ]),
