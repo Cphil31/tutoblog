@@ -20,7 +20,7 @@ class CreatePostTable extends Migration
             $table->text('content');
             $table->integer('counts_comment');
             $table->integer('category_id');
-            $table->user_id();
+            $table->integer('user_id';
             $table->timestamps();
         });
         for ($i=0; $i < 10 ; $i++) { 
@@ -29,6 +29,8 @@ class CreatePostTable extends Migration
                 'slug'=>'post-'.$i,
                 'content'=>'lorem Ipsum', 
                 // tuto https://www.youtube.com/watch?v=mU6e1Ne0Pmg arreté a  17:56
+                'counts_comment'=>3,
+                'category_id'=>'1',
 
             ]),
         }
