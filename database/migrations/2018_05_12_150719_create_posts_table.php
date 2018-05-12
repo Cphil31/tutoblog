@@ -23,6 +23,11 @@ class CreatePostTable extends Migration
             $table->user_id();
             $table->timestamps();
         });
+        for ($i=0; $i < 10 ; $i++) { 
+            Post::create([
+                
+            ]),
+        }
     }
 
     /**
