@@ -15,6 +15,10 @@ class CreatePostTable extends Migration
     {
         Schema::create('post', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('slug');
+            $table->text('content');
+            $table->int('counts_comment');
             $table->timestamps();
         });
     }
