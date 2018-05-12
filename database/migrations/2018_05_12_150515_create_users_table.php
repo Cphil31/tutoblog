@@ -22,6 +22,11 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin')->default(false);
             $table->timestamps();
         });
+
+        Users::create([
+            'username'=>'Philippe',
+            
+        ])
     }
 
     /**
