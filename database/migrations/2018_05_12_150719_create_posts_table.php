@@ -20,7 +20,7 @@ class CreatePostTable extends Migration
             $table->text('content');
             $table->integer('counts_comment')->default(0);
             $table->integer('category_id');
-            $table->integer('user_id';
+            $table->integer('user_id');
             $table->timestamps();
         });
         for ($i=0; $i < 10 ; $i++) { 
@@ -31,7 +31,7 @@ class CreatePostTable extends Migration
                 'counts_comment'=>0,
                 'category_id'=>1,
 
-            ]),
+            ]);
         }
     }
 
