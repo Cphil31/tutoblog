@@ -28,9 +28,8 @@ class CreatePostTable extends Migration
                 'name'=>'Post'.$i,
                 'slug'=>'post-'.$i,
                 'content'=>'lorem Ipsum', 
-                // tuto https://www.youtube.com/watch?v=mU6e1Ne0Pmg arreté a  17:56
                 'counts_comment'=>3,
-                'category_id'=>'1',
+                'category_id'=>1,
 
             ]),
         }
