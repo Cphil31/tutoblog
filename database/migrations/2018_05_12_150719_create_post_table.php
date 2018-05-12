@@ -18,7 +18,9 @@ class CreatePostTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->text('content');
-            $table->int('counts_comment');
+            $table->integer('counts_comment');
+            $table->integer('category_id');
+            $table->user_id();
             $table->timestamps();
         });
     }
