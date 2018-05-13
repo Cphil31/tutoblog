@@ -21,22 +21,23 @@ class CreateCommentTable extends Migration
             $table->integer('post_id');
             $table->timestamps();
 
-            // Comment::create([
-            //         'content'=>'Un commentaire',
-            //         'user_id'=>1,
-            //         'post_id'=>null,
-            // ]);
-            // Comment::create([
-            //         'content'=>'Un commentaire',
-            //         'user_id'=>1,
-            //         'post_id'=>null,
-            // ]);
-            // Comment::create([
-            //         'content'=>'Un commentaire',
-            //         'user_id'=>1,
-            //         'post_id'=>null,
-            // ]);
         });
+        
+            Comment::create([
+                    'content'=>'Un commentaire',
+                    'user_id'=>1,
+                    'post_id'=>1,
+            ]);
+            Comment::create([
+                    'content'=>'Un commentaire',
+                    'user_id'=>1,
+                    'post_id'=>1,
+            ]);
+            Comment::create([
+                    'content'=>'Un commentaire',
+                    'user_id'=>1,
+                    'post_id'=>1,
+            ]);
     }
 
     /**

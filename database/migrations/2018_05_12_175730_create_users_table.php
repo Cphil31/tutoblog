@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Foundation\Auth\User;
 
 class CreateUsersTable extends Migration
 {
@@ -14,6 +14,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
@@ -24,11 +25,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        // User::create([
-        //     'name'=>'Philippe',
-        //     'password'=>Hash::make('admin'), 
-        //     'is_admin'=>true,
-        // ]);
+       
     }
 
     /**
